@@ -1,0 +1,10 @@
+<h1>EDIT YOUR POST PAGE</h1>
+<form action="/posts/<%= @post.id %>" method="post">
+  <input id="hidden" type="hidden" name="_method" value="patch" />
+  <h3>Post Name:</h3>
+  <p><input type="text" name="name" value="<%= @post.name %>" /></p>
+  <h3>Content:</h3>
+  <p><input type="text" name="content" value="<%= @post.content %>"/></p>
+
+  <input type="submit" name="submit" value="submit" />
+</form>
